@@ -34,6 +34,14 @@ export default function BlogPage() {
             </a>
           </div>
         </section>
+
+        <section className="cta-section">
+          <div className="cta-content">
+            <a href="/blog/ai-agents-web-development" className="cta-link">
+              How AI Agents Help Developers Build Websites
+            </a>
+          </div>
+        </section>
       </main>
 
       <Footer />
