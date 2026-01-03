@@ -163,6 +163,31 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.nav-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-primary-indigo);
+}
+
+.nav-link:focus {
+  outline: 2px solid var(--color-primary-indigo);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 /* Theme Toggle Button */
@@ -394,6 +419,44 @@ main {
   color: var(--color-primary-purple);
 }
 
+/* Blog Content Styles */
+.blog-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+.blog-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.blog-section h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-section p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.blog-section strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.blog-content .cta-section {
+  margin-top: var(--spacing-2xl);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
@@ -406,6 +469,18 @@ main {
 
   .cta-link {
     font-size: var(--font-size-lg);
+  }
+
+  .blog-content {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+
+  .blog-section h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .blog-section p {
+    font-size: var(--font-size-base);
   }
 }
 
@@ -433,5 +508,13 @@ main {
   .cta-link {
     font-size: var(--font-size-base);
     padding: var(--spacing-md) 0;
+  }
+
+  .blog-content {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .blog-section {
+    margin-bottom: var(--spacing-xl);
   }
 }

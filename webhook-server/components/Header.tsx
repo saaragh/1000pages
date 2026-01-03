@@ -46,15 +46,18 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <div className="nav-brand">1000pages</div>
-        <button
-          className="theme-toggle"
-          onClick={toggleTheme}
-          aria-label="Toggle dark/light theme"
-          type="button"
-        >
-          <span className="theme-toggle-icon"></span>
-        </button>
+        <a href="/" className="nav-brand">1000pages</a>
+        <div className="nav-links">
+          <a href="/blog" className="nav-link">Blog</a>
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle dark/light theme"
+            type="button"
+          >
+            <span className="theme-toggle-icon"></span>
+          </button>
+        </div>
       </nav>
     </header>
   );
